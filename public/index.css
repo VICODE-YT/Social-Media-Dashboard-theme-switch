@@ -72,9 +72,9 @@ body{
    display: flex;
    flex-direction: column;
    font-weight: 700;
-
 }
-.tittle-description__tittle{
+.tittle-description__tittle,
+.overview-today__tittle{
    font-size: 20px;
    margin-bottom: 0.2em;
    

@@ -9,6 +9,7 @@ const infoTexts = document.getElementsByClassName("info__text");
 
 const titleDash = document.getElementById("tittle-dashboard");
 const descriptionDash = document.getElementById("description-dashboard");
+const overviewTittle = document.getElementById("overview-tittle");
 
 
 
@@ -29,6 +30,8 @@ btnToggle.addEventListener("click",function(){
     bodyTag.classList.toggle("body-dark-theme");
     descriptionDash.classList.toggle("tittle-description__followers--dark-theme");
     titleDash.classList.toggle("tittle-description__tittle--dark-theme");
+    
+    overviewTittle.classList.toggle("tittle-description__tittle--dark-theme");
 
     for(let card of cards){
         card.classList.toggle("card-dark-theme");        
@@ -42,6 +45,8 @@ btnToggle.addEventListener("click",function(){
     for (let infoText of infoTexts) {
         infoText.classList.toggle("infor__text--dark-theme");
     }
-
+    for (let cardOverView of cardsOverView) {
+        cardOverView.classList.toggle("card-dark-theme");
+    }
 
 },false);
