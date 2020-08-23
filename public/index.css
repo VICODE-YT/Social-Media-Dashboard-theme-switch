@@ -144,6 +144,8 @@ body{
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
+   border-radius: 6px;
+
 }
 /* Dark theme */
 .card-dark-theme{
@@ -152,7 +154,6 @@ body{
 .card{
    height: 216px;
    position:relative;
-   border-radius: 6px;
    overflow:hidden;
 }
 .card__decoration{
@@ -200,6 +201,61 @@ body{
 .card__today-amount {
    font-weight: 700;
 }
+/* Bottom */
+.main-container__overview-today{
+   margin-top: 28px;
+}
+.overview-today__grid-overview{
+   grid-template-columns: repeat(auto-fill,255px);
+   display: grid;
+
+   align-items: center;
+   align-content: center;
+
+   justify-content: center;
+   justify-items: center;
+   row-gap: 28px;
+   column-gap: 28px;
+   margin-top: 14px;
+
+}
+.overview-card{
+   height: 125px;
+   display: grid;
+   grid-template-rows: repeat(2,50%);
+   grid-template-columns: repeat(2,50%);
+   
+   justify-content: center;
+   align-content: center;
+
+   justify-items: center;
+   align-items: center;
+
+}
+.overview-card__amount{
+   font-size: 2em;
+   font-weight: 700;
+}
+.icon-facebook{
+   content: url(images/icon-facebook.svg);
+
+}
+.icon-twitter{
+   content: url(images/icon-twitter.svg);
+}
+.icon-instagram{
+   content: url(images/icon-instagram.svg);
+}
+
+.icon-youtube{
+   content: url(images/icon-youtube.svg);
+}
+
+.overview-card__tittle{
+   color:var(--Dark-Grayish-Blue-Text);
+   font-weight: 700;
+}
+
 .positive-amount{
    color: var(--Lime-Green);
 }

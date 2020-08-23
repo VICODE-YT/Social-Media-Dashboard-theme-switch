@@ -11,6 +11,8 @@ const titleDash = document.getElementById("tittle-dashboard");
 const descriptionDash = document.getElementById("description-dashboard");
 const overviewTittle = document.getElementById("overview-tittle");
 
+const overviewCardsAmounts = document.getElementsByClassName("overview-card__amount");
+
 
 
 /* btnToggle.style.justifyContent = "flex-start";
@@ -48,5 +50,8 @@ btnToggle.addEventListener("click",function(){
     for (let cardOverView of cardsOverView) {
         cardOverView.classList.toggle("card-dark-theme");
     }
-
+    for (let overviewCardAmount of overviewCardsAmounts) {
+        overviewCardAmount.classList.toggle("info__amount--dark-theme");
+    }
+    
 },false);
