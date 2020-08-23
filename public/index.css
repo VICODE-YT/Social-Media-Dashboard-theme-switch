@@ -1,0 +1,230 @@
+:root{
+   /* Primary */
+
+--Lime-Green: hsl(163, 72%, 41%);
+--Bright-Red: hsl(356, 69%, 56%);
+
+--Facebook: hsl(208, 92%, 53%);
+--Twitter: hsl(203, 89%, 53%);
+--Instagram: linear-gradient(90deg, hsl(37, 97%, 70%) 2%, hsl(329, 70%, 58%) 100%);
+--YouTube: hsl(348, 97%, 39%);
+
+ /* Dark Theme */
+
+--Toggle-dark: linear-gradient(90deg,hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+
+ /* Light Theme */
+
+--Toggle-light: hsl(230, 22%, 74%);
+
+ /* Neutral */
+
+ /* Dark Theme */
+
+--Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+--Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
+--Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
+--Desaturated-Blue-Text: hsl(228, 34%, 66%);
+--White-Text: hsl(0, 0%, 100%);
+
+ /* Light Theme */
+
+--White-BG: hsl(0, 0%, 100%);
+--Very-Pale-Blue-Top-BG-attern: hsl(225, 100%, 98%);
+
+--Light-Grayish-Blue-Card-BG: hsl(222, 50%, 96%);/* Card no selected */
+--Light-Grayish-Blue-Card-BG-Selected-state: hsl(232, 33%, 91%);
+
+--Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+--Very-Dark-Blue-Text: hsl(230, 17%, 14%);
+
+font-family: 'Inter', sans-serif;
+font-size: 14px;
+
+
+}
+body{
+   width: 100%;
+   background-color: var(--White-BG);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+}
+.main-container{    
+/*    background-color: red;
+ */
+}
+
+.main-container__tittle-container{
+   width:100%;
+   display:flex;
+   align-items: center;
+   align-content: center;
+   justify-content: space-between;
+   padding: 2em 0;
+}
+
+.tittle-container__tittle-description{
+   display: flex;
+   flex-direction: column;
+
+}
+.tittle-description__tittle{
+   font-weight: 700;
+   font-size: 20px;
+   margin-bottom: 0.2em;
+}
+
+.tittle-description__followers{
+   font-weight: 400;
+}
+
+.tittle-container__toggle{
+   background: var(--Toggle-dark);
+   width: 50px;
+
+   height: max-content;
+   border-radius: 1em;
+
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: flex-start;/* JavaScript change to end */
+}
+/* 
+.tittle-container__toggle::before{
+   content: 'Dark Mode';
+   display: block;
+   width: 20px;
+   height: 20px;
+   background: blue;
+
+} */
+.toggle__marker{
+   background-color: var(--White-BG);
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+   margin: 3px 3px;
+}
+
+.main-container__social-overall{
+   display: grid;
+   grid-template-columns: repeat(auto-fill,255px);
+
+   align-items: center;
+   align-content: center;
+
+   justify-content: center;
+   justify-items: center;
+   row-gap: 28px;
+   column-gap: 28px;
+}
+
+.card,
+.overview-card{
+   background-color: var(--Light-Grayish-Blue-Card-BG);
+   width: 255px;
+   max-width: 255px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.card{
+   height: 216px;
+   position:relative;
+   border-radius: 6px;
+   overflow:hidden;
+}
+.card__decoration{
+   position: absolute;
+   height: 6px;
+   width: 100%;
+   background-color: blue;
+   top: 0;
+}
+.card__account{
+   font-size: 14px;
+   font-weight: 400;
+} 
+.card__info{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.info__amount{
+   font-size: 4em;
+   font-weight: 700;
+}
+.info__text{
+   letter-spacing: 4px;
+}
+.card__today-amount {
+   font-weight: 700;
+}
+.positive-amount{
+   color: var(--Lime-Green);
+}
+.negative-amount{
+   color:var(--Bright-Red)
+} 
+
+.positive-amount::before{
+   content: url(images/icon-up.svg);
+   display: inline-block;
+   transform: translateY(-15%) translateX(-75%);
+
+}
+.negative-amount::before{
+   content:url(images/icon-down.svg);
+   transform: translateY(-15%) translateX(-75%);
+   display: inline-block;
+   transform: translateY(-15%) translateX(-75%);
+}
+
+
+.facebook-decoration{
+   background-color: var(--Facebook);
+}
+
+.facebook-account{
+
+}
+.twitter-decoration{
+   background-color: var(--Twitter);
+}
+.instagram-decoration{
+   background: var(--Instagram);
+}
+.youtube-decoration{
+   background-color: var(--YouTube);
+}
+
+.overview-today__tittle{
+   font-weight: 700;
+   font-size: 20px;
+   margin-bottom: 0.2em;
+}
+@media screen and (max-width:411px){
+   .main-container{    
+        min-width: 320px;
+        max-width: /* 1120px */90%;
+        width:325px ;
+   }
+}
+@media screen and (min-width:412px){
+   .main-container{   
+      min-width: max-content;
+      max-width: /* 1120px */78%;
+      width:1120px ;
+   }
+}
+.ligh-theme{
+
+}
+.dark-theme{
+
+}

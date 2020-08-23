@@ -6,79 +6,154 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Social Media Stadistics</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <!-- Flex column, will center always -->
+  <div class="main-container">
+    <div class="main-container__tittle-container">
+      <div class="tittle-container__tittle-description">
+        <div class="tittle-description__tittle">Social Media Dashboard</div>
+        <div class="tittle-description__followers">Total Followers: 23,004</div>
+      </div>
+      <div class="tittle-container__toggle">
+        <div class="toggle__marker"></div>
+      </div>  
+    </div>
 
-  Dark Mode
+    <!-- GRID -->
+    <div class="main-container__social-overall">
+      
+      <div class="card card-facebook"><!-- Relative flex column-->
+        <div class="card__decoration facebook-decoration"></div><!-- Absolute top 0 -->
+        <div class="card__account facebook-account">@nathanf</div>
+        <div class="card__info">
+          <div class="info__amount">1987</div>
+          <div class="info__text">FOLLOWERS</div>
+        </div>
+        <div class="card__today-amount positive-amount">12 Today</div>
+      </div>
 
-  
+      <div class="card card-twitter">
+        <!-- Relative flex column-->
+        <div class="card__decoration twitter-decoration"></div><!-- Absolute top 0 -->
+        <div class="card__account twitter-account">@nathanf</div>
+        <div class="card__info">
+          <div class="info__amount">1044</div>
+          <div class="info__text">FOLLOWERS</div>
+        </div>
+        <div class="card__today-amount positive-amount">99 Today</div>
+      </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <div class="card card-instagram">
+        <!-- Relative flex column-->
+        <div class="card__decoration instagram-decoration"></div><!-- Absolute top 0 -->
+        <div class="card__account instagram-account">@realnathanf</div>
+        <div class="card__info">
+          <div class="info__amount">11k</div>
+          <div class="info__text">FOLLOWERS</div>
+        </div>
+        <div class="card__today-amount positive-amount">1099 Today</div>
+      </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="card card-youtube">
+        <!-- Relative flex column-->
+        <div class="card__decoration youtube-decoration"></div><!-- Absolute top 0 -->
+        <div class="card__account youtube-account">Nathan F.</div>
+        <div class="card__info">
+          <div class="info__amount">8239</div>
+          <div class="info__text">SUBSCRIBERS</div>
+        </div>
+        <div class="card__today-amount negative-amount">144 Today</div>
+      </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    </div><!-- End social overall -->
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+    <div class="main-container__overview-today"><!-- FLEX column -->
+      <div class="overview-today__tittle">Overview - Today</div>
+
+      <div class="overview-today__grid-overview">
+
+        <div class="overview-card card__facebook-views"><!-- GRID 2X2 -->
+          <div class="overview-card__tittle">Page Views</div>
+          <div class="overview-card__icon icon-facebook"></div>
+          <div class="overview-card__amount">87</div>
+          <div class="overview-card__amount-percent positive-amount">3%</div>
+        </div>
+
+        <div class="overview-card card__facebook-likes">
+          <!-- GRID 2X2 -->
+          <div class="overview-card__tittle">Likes</div>
+          <div class="overview-card__icon icon-facebook"></div>
+          <div class="overview-card__amount">52</div>
+          <div class="overview-card__amount-percent negative-amount">2%</div>
+        </div>
+
+        <div class="overview-card card__instagram-likes">
+          <!-- GRID 2X2 -->
+          <div class="overview-card__tittle">Likes</div>
+          <div class="overview-card__icon icon-instagram"></div>
+          <div class="overview-card__amount">5462</div>
+          <div class="overview-card__amount-percent positive-amount">2257%</div>
+        </div>
+
+        <div class="overview-card card__instagram-views">
+          <!-- GRID 2X2 -->
+          <div class="overview-card__tittle">Likes</div>
+          <div class="overview-card__icon icon-instagram"></div>
+          <div class="overview-card__amount">52k</div>
+          <div class="overview-card__amount-percent positive-amount">1375%</div>
+        </div>
+        <!-- 4 Bottom -->
+
+        <div class="overview-card card__twitter-retweets">
+          <!-- GRID 2X2 -->
+          <div class="overview-card__tittle">Retweets</div>
+          <div class="overview-card__icon icon-twitter"></div>
+          <div class="overview-card__amount">117</div>
+          <div class="overview-card__amount-percent positive-amount">303%</div>
+        </div>
+
+        <div class="overview-card card__twitter-likes">
+          <!-- GRID 2X2 -->
+          <div class="overview-card__tittle">Likes</div>
+          <div class="overview-card__icon icon-twitter"></div>
+          <div class="overview-card__amount">507</div>
+          <div class="overview-card__amount-percent positive-amount">553%</div>
+        </div>
+
+        <div class="overview-card card__youtube-likes">
+          <!-- GRID 2X2 -->
+          <div class="overview-card__tittle">Likes</div>
+          <div class="overview-card__icon icon-youtube"></div>
+          <div class="overview-card__amount">107</div>
+          <div class="overview-card__amount-percent negative-amount">19%</div>
+        </div>
+
+        <div class="overview-card card__youtube-views">
+          <!-- GRID 2X2 -->
+          <div class="overview-card__tittle">Likes</div>
+          <div class="overview-card__icon icon-youtube"></div>
+          <div class="overview-card__amount">1407</div>
+          <div class="overview-card__amount-percent negative-amount">12%</div>
+        </div>
+
+      </div>
+    </div><!-- End overview today container -->
 
 
+  </div><!-- End main container -->
 
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
