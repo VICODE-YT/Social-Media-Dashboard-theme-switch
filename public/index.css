@@ -149,6 +149,7 @@ body{
    font-size: 14px;
    font-weight: 400;
 } 
+
 .card__info{
    display: flex;
    flex-direction: column;
@@ -185,13 +186,9 @@ body{
    transform: translateY(-15%) translateX(-75%);
 }
 
-
+/* Top color bar */
 .facebook-decoration{
    background-color: var(--Facebook);
-}
-
-.facebook-account{
-
 }
 .twitter-decoration{
    background-color: var(--Twitter);
@@ -201,6 +198,31 @@ body{
 }
 .youtube-decoration{
    background-color: var(--YouTube);
+}
+/* Icons Account */
+.facebook-account::before{
+   content: url(images/icon-facebook.svg);
+   display: inline-block;
+   transform: translateY(25%);
+   margin-right: 0.5em;
+}
+.instagram-account::before{
+   content: url(images/icon-instagram.svg);
+   display: inline-block;
+   transform: translateY(25%);
+   margin-right: 0.5em;
+}
+.twitter-account::before{
+   content: url(images/icon-twitter.svg);
+   display: inline-block;
+   transform: translateY(25%);
+   margin-right: 0.5em;
+}
+.youtube-account::before{
+   content: url(images/icon-youtube.svg);
+   display: inline-block;
+   transform: translateY(25%);
+   margin-right: 0.5em;
 }
 
 .overview-today__tittle{
