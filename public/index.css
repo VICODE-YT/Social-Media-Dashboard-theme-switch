@@ -51,6 +51,9 @@ body{
    align-items: center;
    align-content: center;
 }
+.body-dark-theme{
+   background-color: var(--Very-Dark-Blue-BG);
+}
 .main-container{    
 /*    background-color: red;
  */
@@ -132,6 +135,10 @@ body{
    justify-content: space-evenly;
    align-items: center;
 }
+/* Dark theme */
+.card-dark-theme{
+   background-color: var(--Dark-Desaturated-Blue-Card-BG);
+}
 .card{
    height: 216px;
    position:relative;
@@ -148,8 +155,13 @@ body{
 .card__account{
    font-size: 14px;
    font-weight: 400;
-} 
+   color: var(--Very-Dark-Blue-Text);
 
+} 
+.card__account--dark-theme{
+   color: var(--Desaturated-Blue-Text);
+
+}
 .card__info{
    display: flex;
    flex-direction: column;
@@ -159,9 +171,21 @@ body{
 .info__amount{
    font-size: 4em;
    font-weight: 700;
+   color: var(--Very-Dark-Blue-Text);
+   
 }
+/* Dark theme */
+.info__amount--dark-theme{
+   color: var(--White-Text);
+}
+
 .info__text{
    letter-spacing: 4px;
+   color: var(--Dark-Grayish-Blue-Text);
+}
+/* Dark theme */
+.infor__text--dark-theme{
+   color:var(--Desaturated-Blue-Text)
 }
 .card__today-amount {
    font-weight: 700;
