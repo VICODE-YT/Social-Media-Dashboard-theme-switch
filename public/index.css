@@ -71,16 +71,26 @@ body{
 .tittle-container__tittle-description{
    display: flex;
    flex-direction: column;
+   font-weight: 700;
 
 }
 .tittle-description__tittle{
-   font-weight: 700;
    font-size: 20px;
    margin-bottom: 0.2em;
-}
+   
+   color:var(--Very-Dark-Blue-Text)
 
+}
+.tittle-description__tittle--dark-theme{
+   color: var(--White-Text);
+}
 .tittle-description__followers{
-   font-weight: 400;
+   color:var(--Dark-Grayish-Blue-Text)
+}
+.tittle-description__followers--dark-theme{
+
+   color: var(--Dark-Grayish-Blue-Text);
+
 }
 
 .tittle-container__toggle{

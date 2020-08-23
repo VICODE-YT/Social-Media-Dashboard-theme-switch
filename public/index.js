@@ -7,6 +7,10 @@ const cardsAmounts = document.getElementsByClassName("info__amount");
 const cardAccounts = document.getElementsByClassName("card__account");
 const infoTexts = document.getElementsByClassName("info__text");
 
+const titleDash = document.getElementById("tittle-dashboard");
+const descriptionDash = document.getElementById("description-dashboard");
+
+
 
 /* btnToggle.style.justifyContent = "flex-start";
  */
@@ -23,6 +27,8 @@ btnToggle.addEventListener("click",function(){
         currentTheme = "light";
     }
     bodyTag.classList.toggle("body-dark-theme");
+    descriptionDash.classList.toggle("tittle-description__followers--dark-theme");
+    titleDash.classList.toggle("tittle-description__tittle--dark-theme");
 
     for(let card of cards){
         card.classList.toggle("card-dark-theme");        
