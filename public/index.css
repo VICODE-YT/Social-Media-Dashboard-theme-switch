@@ -41,6 +41,7 @@
 font-family: 'Inter', sans-serif;
 font-size: 14px;
 
+--margin-sub-items-overview-card: 25px;
 
 }
 body{
@@ -204,6 +205,8 @@ body{
 /* Bottom */
 .main-container__overview-today{
    margin-top: 28px;
+   margin-bottom: 28px;
+
 }
 .overview-today__grid-overview{
    grid-template-columns: repeat(auto-fill,255px);
@@ -224,17 +227,27 @@ body{
    display: grid;
    grid-template-rows: repeat(2,50%);
    grid-template-columns: repeat(2,50%);
-   
-   justify-content: center;
-   align-content: center;
 
-   justify-items: center;
-   align-items: center;
+   /* The tracks */
+/*    justify-content: center;
+   align-content: center; */
+
+   /* The items inside the tracks */
+/*    justify-items: center;
+   align-items: center; */
 
 }
+
+
+
 .overview-card__amount{
    font-size: 2em;
    font-weight: 700;
+   justify-self: start;
+   align-self: end;
+   margin-left:var(--margin-sub-items-overview-card);
+   margin-bottom:var(--margin-sub-items-overview-card);
+
 }
 .icon-facebook{
    content: url(images/icon-facebook.svg);
@@ -254,8 +267,23 @@ body{
 .overview-card__tittle{
    color:var(--Dark-Grayish-Blue-Text);
    font-weight: 700;
+   justify-self: start;
+   align-self: start;
+   margin-left:var(--margin-sub-items-overview-card);
+   margin-top:var(--margin-sub-items-overview-card);
 }
-
+.overview-card__icon{
+   justify-self: end;
+   align-self: start;
+   margin-right:var(--margin-sub-items-overview-card);
+   margin-top:var(--margin-sub-items-overview-card);
+}
+.overview-card__amount-percent{
+   justify-self: end;
+   align-self: end;
+   margin-right:var(--margin-sub-items-overview-card);
+   margin-bottom:var(--margin-sub-items-overview-card);
+}
 .positive-amount{
    color: var(--Lime-Green);
 }
